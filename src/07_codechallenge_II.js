@@ -38,7 +38,7 @@ switch (kDurst) {
     break;
 
     default: kDrink = "Sonstige";
-        break;
+    break;
 }
 
 console.log(kName + " trinken " + kDrink);
