@@ -18,20 +18,28 @@ Alter 13-17 // Cola
 
 const prompt = require('prompt-sync')({sigint: true});
 
+const cond = true;
+const kName = prompt("Geben Sie Ihre Name ein! ");
+const kAlter = parseInt(prompt("Geben Sie Ihre Alter ein! "));
+let kDrink;
 
-
-let kName = prompt("Geben Sie Ihre Name ein! ");
-let kAlter = prompt("Geben Sie Ihre Alter ein! ");
-
-switch (kAlter) {
-    case (kAlter == 0  ):
-        
+switch (cond) {
+    case (kAlter >= 0 && kAlter <= 5):
+        kDrink = "Milch";
         break;
+    case (kAlter >= 6 && kAlter <= 12):
+        kDrink = "Saft";
+        break;
+    case (kAlter >= 13 && kAlter <= 17):
+        kDrink = "Cola";
+        break;
+    case (kAlter > 17):
+    kDrink = "Wein";
+    break;
 
-    default:
+    default: kDrink = "Sonstige";
         break;
 }
 
-console.log("Name: " + sName);
-
+console.log(kName + " trinken " + kDrink);
 
