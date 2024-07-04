@@ -37,7 +37,7 @@ switch (kDurst) {
         kDrink = "Milch, Saft, Cola, Wein";
         break;
 
-    default: kDrink = "Sonstige";
+    default: kDrink = "Milch, Saft, Cola, Wein";
     break;
 }
 
