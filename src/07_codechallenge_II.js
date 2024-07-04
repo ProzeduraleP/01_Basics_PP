@@ -28,18 +28,18 @@ switch (kDurst) {
         kDrink = "Milch";
         break;
     case (kAlter >= 6 && kAlter <= 12):
-        kDrink = "Saft";
+        kDrink = "Milch, Saft";
         break;
     case (kAlter >= 13 && kAlter <= 17):
-        kDrink = "Cola";
+        kDrink = "Milch, Saft, Cola";
         break;
     case (kAlter > 17):
-    kDrink = "Wein";
-    break;
+        kDrink = "Milch, Saft, Cola, Wein";
+        break;
 
     default: kDrink = "Sonstige";
     break;
 }
 
-console.log(kName + " trinken " + kDrink);
+console.log("Hey " + kName + "!" + " Ihr Getränke Auswahl: " + kDrink);
 
