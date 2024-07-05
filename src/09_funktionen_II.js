@@ -36,6 +36,7 @@ function multiply(a,b) {
 }
 
 // module: division a / b |  test:
+const ERROR_STR_DIV = "Teilen durch 0 ist nicht möglich!";
 output(divide(4,2));
 output(divide(3,2));
 output(divide(3,-2));
@@ -46,7 +47,7 @@ function divide(a, b) {
 	if(b != 0) { 
 		return a / b;
 	}else{
-		return "fehler";
+		return ERROR_STR_DIV;
 	}
 
 }
