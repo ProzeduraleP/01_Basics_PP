@@ -15,19 +15,19 @@ const ERROR_STR_GEN = "Irgendwas ging schief!";
 
 startApp()
 function startApp() {
-	output(calculator(getNum1(),getNum2(),getOp()));
+	output(calculator(getNum1(), getOp(), getNum2()));
 }
 
 function getNum1() {
 	return parseInt(prompt("Zahl1?: "));
 }
 
-function getNum2() {
-	return parseInt(prompt("Zahl2?: "));
-}
-
 function getOp() {
 	return prompt("OP?: ");
+}
+
+function getNum2() {
+	return parseInt(prompt("Zahl2?: "));
 }
 
 
@@ -82,7 +82,7 @@ function divide(a, b) {
 // output(calculator(3,0,"/"));
 // output(calculator(3,2,"#?!"));
 
-function calculator(a, b, op) {
+function calculator(a, op, b) {
 	switch (op) {
 		case "+": // Addition
 			return add(a, b);	
