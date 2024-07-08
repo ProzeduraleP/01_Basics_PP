@@ -103,20 +103,35 @@ hier: Aufsummierung
 //     return str;
 // }
 
-output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
-function getSentenceArr2(arr) {
+// output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
+// function getSentenceArr2(arr) {
+//     const GAP = " ";
+//     const PUNCT = ".";
+//     let str = "";
+
+//     for (let i = 0; i < arr.length; i++) {
+//         if(i < arr.length-1){
+//             str += arr[i] + GAP;
+//         }else{
+//             str += arr[i] + PUNCT;
+//         }  
+//     }
+//     return str;
+// }
+
+output(getSentenceArr3(["Ich","bin","die","coole","Maxine","Mützerich"]));
+function getSentenceArr3(arr) {
     const GAP = " ";
     const PUNCT = ".";
     let str = "";
 
-    for (let i = 0; i < arr.length; i++) {
-        if(i < arr.length-1){
-            str += arr[i] + GAP;
-        }else{
-            str += arr[i] + PUNCT;
-        }  
-    }
-    return str;
+    // for (let i = 0; i < arr.length; i++) {
+    //     str += arr[i] + GAP;
+    // }
+    // return str.trim() + PUNCT;
+
+    return arr.join(GAP) + PUNCT;
+    
 }
 
 
