@@ -30,8 +30,27 @@ let arr;
 
 /***** Objekte 1 Daten/Funktionen *******/
 
+let person = {
 
+    firstName: "Marco",
+    familyName: "Miro",
+    salary: [120000, 160000],    
+    permission: true,
+    sayHello: function() {
+        // return "Hello";
+        return "Hello ich bin " +  this.firstName;
+    }
+}
+output(person.firstName);
+output(person.salary[1]);
 
+const txt = person.sayHello() + " und verdiene " + person.salary[1] + " p.a." + person.sayHello;
+output(txt);
+
+output(person.sayHello());
+
+// person.newKey = "newValue";
+// output(person);
 
 
 // Modul: Ausgabe | Test
