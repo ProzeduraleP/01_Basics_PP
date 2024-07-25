@@ -1,6 +1,6 @@
 /***** Erinnerung: Arrays *******/
 
-let arr;
+// let arr;
 // arr = ["Ich","bin","Max"];
 // output(arr);
 // output(arr[0]);
@@ -30,42 +30,50 @@ let arr;
 
 /***** Objekte 1 Daten/Funktionen *******/
 
-// let person = {
+let person = {
 
-//     firstName: "Marco",
-//     familyName: "Miro",
-//     salary: [120000, 160000],    
-//     permission: true,
-//     sayHello: function() {
-//         // return "Hello";
-//         return "Hello ich bin " +  this.firstName;
-//     }
-// }
-// output(person.firstName);
-// output(person.salary[1]);
-
-// const txt = person.sayHello() + " und verdiene " + person.salary[1] + " p.a." + person.sayHello;
-// output(txt);
-
-// output(person.sayHello());
-
-// person.newKey = "newValue";
-// output(person);
-
-let baikal = {
-
-    value: "10",
-    deep:{
-        deeper:{
-            temperatur: "4 Grad Celsius",
-            deepest: "Das Licht - auf 1642m!"
-        }
+    firstName: "Marco",
+    familyName: "Miro",
+    salary: [120000, 160000],    
+    permission: true,
+    sayHello: function() {
+        // return "Hello";
+        return "Hello ich bin " +  this.firstName;
     }
-};
+}
+output(person.firstName + " " + person.familyName);
+output(person.salary[1]);
+output("------");
 
-output(baikal);
-output(baikal.value);
-output(baikal.deep.deeper.temperatur);
+const txt = person.sayHello() + " und verdiene " + person.salary[1] + " p.a."
+output(txt);
+output("------");
+
+output(person.sayHello());
+output("------");
+
+person.newKey = "newValue";
+output(person.newKey);
+output("------");
+
+output(person);
+
+
+
+// let baikal = {
+
+//     value: "10",
+//     deep:{
+//         deeper:{
+//             temperatur: "4 Grad Celsius",
+//             deepest: "Das Licht - auf 1642m!"
+//         }
+//     }
+// };
+
+// output(baikal);
+// output(baikal.value);
+// output(baikal.deep.deeper.temperatur);
 
 
 
